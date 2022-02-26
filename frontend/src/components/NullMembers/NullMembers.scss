@@ -1,0 +1,16 @@
+.null-members-container {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  span {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  img {
+    width: 120px;
+    margin: 0 auto;
+  }
+}

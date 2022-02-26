@@ -1,0 +1,18 @@
+:root {
+  --scrollbarThumb: rgba(255, 255, 255, 0.8);
+  --scrollbarWidth: 8px;
+  --scrollbarBorder: 1px solid var(--scrollbarBg);
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+}
+.app-scroll {
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumb);
+}
+.app-scroll::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+}
+.app-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarThumb);
+  border-radius: var(--scrollbarBorderRadius);
+  border: var(--scrollbarBorder);
+}

@@ -1,0 +1,170 @@
+.conversation-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  flex-grow: 1;
+  background-color: #161819;
+}
+
+.conversation-messages {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.conversation-item {
+  height: 82%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 100px 0 100px;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
+}
+
+.conversation-item-message {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.img-container {
+  height: 100%;
+  width: 50px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img-end {
+  order: 1;
+}
+
+.start {
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.end {
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.fromMe {
+  align-self: flex-end;
+}
+
+.fromSender {
+  align-items: flex-start;
+}
+
+.conversation-item-message_text {
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.bg-primary {
+  background-color: #387aff;
+  border-radius: 15px 0 15px 15px;
+}
+
+.bg-sender {
+  background-color: #27292e;
+  border-radius: 0 15px 15px 15px;
+}
+
+.conversation-header {
+  background-color: #161819;
+  width: 100%;
+  height: 8%;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.25), 0 3px 3px -2px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  &_item {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161819;
+  }
+  &-menu {
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+  &-userstatus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.conversation-status {
+  font-size: 0.9rem;
+}
+
+.bg-online {
+  color: rgb(53, 201, 110);
+}
+
+.bg-offline {
+  color: rgb(170, 135, 135);
+}
+
+.conversation-username {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.conversation-form {
+  padding: 0 100px 20px 100px;
+  height: 8%;
+  margin-top: 15px;
+  form {
+    display: flex;
+    background-color: #27292e;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    input {
+      color: #939496;
+      outline: none;
+      font-size: 1rem;
+      background-color: #27292e;
+      margin-left: 70px;
+      width: 88%;
+      height: 50%;
+    }
+  }
+  button {
+    margin-left: 20px;
+    color: #fff;
+    img {
+      width: 30px;
+      height: 30px;
+      transform: rotate(44deg);
+    }
+  }
+}
