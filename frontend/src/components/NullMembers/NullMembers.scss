@@ -2,9 +2,11 @@
   color: #fff;
   text-align: center;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   margin-top: 40px;
+
   span {
     margin-bottom: 20px;
     font-weight: 500;

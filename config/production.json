@@ -1,7 +1,0 @@
-{
-    "portConst": "5000",
-    "socketClientHost": "http://localhost:3000",
-    "mongoUri": "mongodb+srv://stas:sosik228@cluster0.oxoie.mongodb.net/messenger?retryWrites=true&w=majority",
-    "jwtSecret": "Gyf6tNF^&nrf8er43fm78fj"
-  }
-  

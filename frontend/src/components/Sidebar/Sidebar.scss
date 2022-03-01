@@ -1,13 +1,14 @@
 .sidebar-container {
-  width: 26%;
-  height: 100%;
+  width: 30%;
+  height: 100vh;
   padding: 30px 40px;
   display: flex;
   flex-direction: column;
   background: #191c22;
-  height: 100vh;
+  overflow: hidden;
 }
 .sidebar-search {
+  height: 10%;
   form {
     width: 100%;
     display: flex;
@@ -80,6 +81,10 @@
   }
 }
 
+.sidebar-card-container {
+  height: 15%;
+}
+
 .sidebar-card {
   width: 100%;
   display: flex;
@@ -141,6 +146,7 @@
 }
 
 .sidebar-options {
+  height: 15%;
   width: 100%;
   margin-top: 40px;
   .members,
@@ -168,6 +174,7 @@
 }
 .sidebar-messages {
   margin-top: 40px;
+  min-height: 60%;
 }
 .placeholder {
   width: 100%;
@@ -182,6 +189,9 @@
 .drop {
   width: 100%;
   margin-top: 20px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  height: 80%;
 }
 .drop-list {
   width: 100%;
@@ -189,6 +199,7 @@
   color: #fff;
   cursor: pointer;
   border-radius: 13px;
+  scroll-snap-align: start;
 
   &:hover {
     background: #27292d;
@@ -234,3 +245,162 @@
   display: flex;
   justify-content: center;
 }
+
+// @media screen and (max-width: 640px) {
+//   .sidebar-container {
+//     padding: 10px 10px;
+//     span {
+//       font-size: 5px;
+//     }
+//     i {
+//       height: 100%;
+//       font-size: 8px;
+//     }
+//   }
+
+//   .sidebar-search {
+//     form {
+//       padding: 3px 12px;
+//       height: 16px;
+//     }
+//     input {
+//       width: 90%;
+//       font-size: 5px;
+//       height: 100%;
+//     }
+//     button {
+//       height: 16px;
+//       width: 5px;
+//       i {
+//         height: 100%;
+//         font-size: 5px;
+//       }
+//     }
+//   }
+
+//   .sidebar-card {
+//     border-radius: 9px;
+//     padding: 6px;
+//     margin-top: 9px;
+//     img {
+//       width: 20px;
+//       height: 20px;
+//       border-radius: 5px;
+//     }
+//     h2 {
+//       font-size: 6px;
+//     }
+
+//     &-menu {
+//       img {
+//         height: 7px;
+//         width: 7px;
+//       }
+//     }
+
+//     &-status {
+//       width: 70%;
+//       height: 20px;
+//       .status-flex {
+//         span {
+//           margin-left: 4px;
+//           font-size: 6px;
+//         }
+//         i {
+//           height: 100%;
+//           font-size: 6px;
+//         }
+//       }
+//     }
+//   }
+
+//   .sidebar-options {
+//     height: 15%;
+//     width: 100%;
+//     margin-top: 10px;
+//     .members,
+//     .settings {
+//       width: 100%;
+//       border-radius: 6px;
+//       padding: 6px;
+//       span {
+//         margin-left: 13px;
+//       }
+//     }
+//   }
+
+//   .dropdown-content {
+//     border-radius: 8px;
+//     min-width: 50px;
+//     padding: 4px 3px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     .exit-account {
+//       padding: 3px;
+//       font-size: 4px;
+//       border-radius: 4px;
+//       width: 100%;
+//     }
+//   }
+
+//   .sidebar-messages {
+//     margin-top: 10px;
+//     min-height: 60%;
+//   }
+//   .placeholder {
+//     width: 100%;
+//     padding: 0 7px;
+//     span {
+//       margin-left: 6px;
+//     }
+//     i {
+//       font-size: 6px;
+//     }
+//   }
+//   .drop {
+//     width: 100%;
+//     margin-top: 3px;
+//     overflow-y: auto;
+//     height: 80%;
+//   }
+//   .drop-list {
+//     width: 100%;
+//     padding: 2px 4px;
+//     border-radius: 4px;
+//     .drop-list_block {
+//       span {
+//         margin-left: 5px;
+//       }
+//       img {
+//         width: 15px;
+//         height: 15px;
+//         border-radius: 5px;
+//       }
+//       .plus-block {
+//         width: 15px;
+//         height: 15px;
+//         border-radius: 5px;
+//         position: relative;
+//         i {
+//           font-size: 5px;
+//           height: 5px;
+//           position: absolute;
+//           top: 50%;
+//           margin: -2.5px 0 0 0;
+//         }
+//       }
+//     }
+//   }
+
+//   .drop-list-icon {
+//     color: #54d497;
+//     position: relative;
+//     i {
+//       font-size: 4px;
+//       position: absolute;
+//       margin-top: 21px;
+//       left: 22px;
+//     }
+//   }
+// }

@@ -17,6 +17,8 @@ const io = require("socket.io")(server, {
   },
 });
 
+__dirname = path.resolve();
+
 io.on("connection", (socket) => {
   const id = socket.handshake.query.id;
   socket.join(id);

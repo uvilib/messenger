@@ -88,41 +88,43 @@ const Sidebar = ({
           </form>
         </div>
         {!userLoad && username ? (
-          <div className="sidebar-card">
-            <img src={image} alt="icon" />
-            <div className="sidebar-card-status">
-              <h2>{username}</h2>
-              <div className="status-flex">
-                {conversation ? (
-                  <i className="fa fa-circle i-parent">
-                    <i className="fa fa-ellipsis-h i-child"></i>
-                  </i>
-                ) : (
-                  <i className="fa fa-rss on fa-circle"></i>
-                )}
-                <span>{conversation ? "В чате" : "Online"}</span>
+          <div className="sidebar-card-container">
+            <div className="sidebar-card">
+              <img src={image} alt="icon" />
+              <div className="sidebar-card-status">
+                <h2>{username}</h2>
+                <div className="status-flex">
+                  {conversation ? (
+                    <i className="fa fa-circle i-parent">
+                      <i className="fa fa-ellipsis-h i-child"></i>
+                    </i>
+                  ) : (
+                    <i className="fa fa-rss on fa-circle"></i>
+                  )}
+                  <span>{conversation ? "В чате" : "Online"}</span>
+                </div>
               </div>
-            </div>
-            <div className="sidebar-card-menu">
-              <div className="dropdown">
-                <button onClick={dropMenu}>
-                  <img src="images/ellipsis.png" alt="menu" />
-                </button>
-                <div
-                  className="dropdown-content"
-                  style={styleMenu}
-                  onMouseLeave={() => {
-                    setShowMenu(false);
-                  }}
-                >
-                  <button
-                    className="exit-account"
-                    onClick={() => {
-                      auth.logout();
+              <div className="sidebar-card-menu">
+                <div className="dropdown">
+                  <button onClick={dropMenu}>
+                    <img src="images/ellipsis.png" alt="menu" />
+                  </button>
+                  <div
+                    className="dropdown-content"
+                    style={styleMenu}
+                    onMouseLeave={() => {
+                      setShowMenu(false);
                     }}
                   >
-                    Выйти из аккаунта
-                  </button>
+                    <button
+                      className="exit-account"
+                      onClick={() => {
+                        auth.logout();
+                      }}
+                    >
+                      Выйти из аккаунта
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,7 +156,7 @@ const Sidebar = ({
           </div>
           {showMessage && !messageLoad ? (
             message ? (
-              <div className="drop">
+              <div className="drop app-scroll">
                 {message.map((item, index) => {
                   return (
                     <div
