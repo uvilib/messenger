@@ -32,3 +32,9 @@
   flex-direction: column;
   padding: 50px 33px 33px 33px;
 }
+
+@media (max-width: 375px) {
+  .background {
+    display: none;
+  }
+}

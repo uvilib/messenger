@@ -166,15 +166,14 @@ const Conversation = ({
                           item.sender === auth.userId ? "end" : "start"
                         }`}
                       >
-                        <div>
-                          <span>
-                            {item.sender === counter[counter.length - 2]
-                              ? null
-                              : item.sender === auth.userId
-                              ? "Вы"
-                              : conversation.usernameRecepient}
-                          </span>
-                        </div>
+                        <span>
+                          {item.sender === counter[counter.length - 2]
+                            ? null
+                            : item.sender === auth.userId
+                            ? "Вы"
+                            : conversation.usernameRecepient}
+                        </span>
+
                         <div
                           className={`conversation-item-message_text ${
                             item.sender === auth.userId

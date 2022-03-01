@@ -95,7 +95,7 @@ const FirstStep = ({
                 </button>
               </div>
 
-              <div className="text-center p-t-136 reg-link">
+              <div className="text-center p-t-136 first-reg-link">
                 <p>Уже есть аккаунт?</p>
                 <a className="txt2" href="/">
                   Войти

@@ -16,3 +16,12 @@
   border-radius: var(--scrollbarBorderRadius);
   border: var(--scrollbarBorder);
 }
+
+@media (max-width: 1024px) {
+  :root {
+    --scrollbarThumb: rgba(255, 255, 255, 0.8);
+    --scrollbarWidth: 3px;
+    --scrollbarBorder: 1px solid var(--scrollbarBg);
+    --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+  }
+}

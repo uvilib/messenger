@@ -22,3 +22,15 @@
   right: -80px;
   bottom: -80px;
 }
+.first-reg-link {
+  padding-top: 60px;
+  a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-step-background {
+    display: none;
+  }
+}

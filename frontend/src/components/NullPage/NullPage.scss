@@ -398,3 +398,94 @@
   overflow: hidden;
   max-height: 100vh;
 }
+
+@media (max-width: 1024px) {
+  .message__title {
+    letter-spacing: 5px;
+    font-size: 24px;
+    padding-bottom: 20px;
+    max-width: 720px;
+  }
+  .message__text {
+    line-height: 32px;
+    font-size: 15px;
+    padding: 0 60px;
+    max-width: 680px;
+  }
+  .lamp {
+    margin: 0px auto;
+    width: 300px;
+  }
+  .cable {
+    width: 8px;
+    height: 140px;
+  }
+  .cover {
+    width: 130px;
+    height: 60px;
+  }
+
+  .in-cover {
+    width: 100%;
+    max-width: 130px;
+    height: 20px;
+    bottom: -9px;
+  }
+  .in-cover .bulb {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    margin: 0px auto;
+  }
+
+  .light {
+    width: 74%;
+    height: 0px;
+    top: 190px;
+  }
+}
+@media (max-width: 375px) {
+  .message__title {
+    letter-spacing: 5px;
+    font-size: 17px;
+    padding-bottom: 13px;
+    max-width: 420px;
+  }
+  .message__text {
+    line-height: 23px;
+    font-size: 12px;
+    padding: 0 60px;
+    max-width: 470px;
+  }
+  .lamp {
+    margin: 0px auto;
+    width: 250px;
+  }
+  .cable {
+    width: 8px;
+    height: 110px;
+  }
+  .cover {
+    width: 100px;
+    height: 60px;
+  }
+
+  .in-cover {
+    width: 100%;
+    max-width: 100px;
+    height: 20px;
+    bottom: -9px;
+  }
+  .in-cover .bulb {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    margin: 0px auto;
+  }
+
+  .light {
+    width: 74%;
+    height: 0px;
+    top: 150px;
+  }
+}

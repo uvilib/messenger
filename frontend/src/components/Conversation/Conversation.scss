@@ -169,3 +169,143 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .conversation-messages {
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  .conversation-item {
+    height: 82%;
+    padding: 15px 40px 0 40px;
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 9px;
+    }
+  }
+
+  .img-container {
+    height: 100%;
+    width: 25px;
+  }
+
+  .message-container {
+    span {
+      font-size: 8px;
+      vertical-align: top;
+    }
+  }
+
+  .start {
+    margin-left: 10px;
+  }
+
+  .end {
+    margin-right: 10px;
+  }
+
+  .conversation-item-message_text {
+    margin-top: 10px;
+    border-radius: 7px;
+    padding: 6px;
+    font-size: 8px;
+  }
+
+  .bg-primary {
+    background-color: #387aff;
+    border-radius: 15px 0 15px 15px;
+  }
+
+  .bg-sender {
+    background-color: #27292e;
+    border-radius: 0 15px 15px 15px;
+  }
+
+  .conversation-header {
+    height: 8%;
+
+    &_item {
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 9px;
+      }
+      padding: 0 40px;
+    }
+    &-menu {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .conversation-status {
+    font-size: 7px;
+  }
+
+  .conversation-username {
+    font-size: 10px;
+  }
+
+  .conversation-item {
+    height: 82%;
+  }
+
+  .conversation-form {
+    padding: 0 40px 0 40px;
+    height: 10%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    form {
+      border-radius: 6px;
+      height: 25px;
+      input {
+        font-size: 8px;
+        margin-left: 25px;
+        width: 88%;
+        height: 25px;
+      }
+    }
+    button {
+      margin-left: 4%;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .conversation-item {
+    height: 82%;
+    padding: 10px 20px 0 20px;
+  }
+  .conversation-header {
+    &_item {
+      padding: 0 20px;
+    }
+  }
+  .conversation-form {
+    padding: 0 20px 0 20px;
+    form {
+      input {
+        font-size: 8px;
+        margin-left: 15px;
+        width: 85%;
+        height: 25px;
+      }
+    }
+    button {
+      margin-left: 0;
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

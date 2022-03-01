@@ -50,6 +50,8 @@
   border-radius: 8px;
   background-color: #f9f9f9;
   min-width: 180px;
+  display: flex;
+  justify-content: center;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 14px 18px;
   z-index: 1;
@@ -81,10 +83,6 @@
   }
 }
 
-.sidebar-card-container {
-  height: 15%;
-}
-
 .sidebar-card {
   width: 100%;
   display: flex;
@@ -96,13 +94,13 @@
   padding: 15px;
   margin-top: 25px;
   img {
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: 15%;
     border-radius: 8px;
   }
   &-status {
     width: 70%;
-    height: 60px;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -110,16 +108,19 @@
       display: flex;
       align-items: center;
       color: #54d497;
+      i {
+        font-size: 100%;
+      }
       span {
         color: #fff;
         margin-left: 10px;
-        font-size: 14px;
+        font-size: 90%;
       }
     }
     h2 {
       color: #fff;
       font-weight: 500;
-      font-size: 1.5rem;
+      font-size: 120%;
     }
   }
   &-menu {
@@ -244,6 +245,268 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1370px) {
+}
+
+@media (max-width: 1024px) {
+  .sidebar-search {
+    height: 26px;
+    form {
+      width: 100%;
+      padding: 3px 12px;
+      border-radius: 11px;
+    }
+    input {
+      width: 90%;
+      height: 20px;
+      font-size: 8px;
+    }
+    button {
+      height: 20px;
+      width: 10%;
+      i {
+        font-size: 7px;
+        height: 20px;
+        align-self: center;
+      }
+    }
+  }
+
+  .sidebar-container {
+    padding: 15px 40px;
+    span {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 11px;
+    }
+  }
+
+  .sidebar-card-container {
+    height: 56px;
+  }
+
+  .sidebar-card {
+    margin-top: 20px;
+    padding: 8px;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .sidebar-card-status {
+    width: 60%;
+    .status-flex {
+      i {
+        font-size: 8px;
+      }
+      span {
+        font-size: 8px;
+      }
+    }
+  }
+
+  .dropdown {
+    img {
+      height: 12px;
+      width: 12px;
+    }
+  }
+
+  .dropdown-content {
+    border-radius: 6px;
+    min-width: 90px;
+    padding: 6px 6px;
+    .exit-account {
+      padding: 3px;
+      font-size: 8px;
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+
+  .sidebar-options {
+    height: 54px;
+    width: 100%;
+    margin-top: 30px;
+    .members,
+    .settings {
+      i {
+        font-size: 9px;
+      }
+      border-radius: 9px;
+      padding: 8px;
+      span {
+        margin-left: 5%;
+        font-size: 9px;
+      }
+    }
+  }
+  .sidebar-messages {
+    margin-top: 20px;
+    min-height: 65%;
+  }
+  .placeholder {
+    padding: 0 8px;
+    span {
+      margin-left: 2%;
+      font-size: 9px;
+    }
+    i {
+      font-size: 9px;
+    }
+  }
+
+  .drop {
+    margin-top: 10px;
+  }
+  .drop-list {
+    padding: 8px;
+    border-radius: 8px;
+    .drop-list_block {
+      span {
+        margin-left: 5%;
+        font-size: 8px;
+      }
+      img {
+        width: 15px;
+        height: 15px;
+        border-radius: 6px;
+      }
+      .plus-block {
+        width: 15px;
+        height: 15px;
+        border-radius: 6px;
+        i {
+          font-size: 6px;
+        }
+      }
+    }
+  }
+
+  .drop-list-icon {
+    i {
+      font-size: 5px;
+      margin-top: 11px;
+      left: 12px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .sidebar-container {
+    padding: 15px 5px;
+    span {
+      font-size: 8px;
+    }
+    h2 {
+      font-size: 6px;
+    }
+  }
+  .sidebar-card {
+    margin-top: 20px;
+    padding: 6px;
+    border-radius: 8px;
+    img {
+      height: 20px;
+      width: 20px;
+      border-radius: 4px;
+    }
+  }
+  .sidebar-card-status {
+    width: 60%;
+    .status-flex {
+      i {
+        font-size: 4px;
+      }
+      span {
+        font-size: 5px;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .dropdown {
+    img {
+      height: 8px;
+      width: 8px;
+    }
+  }
+
+  .dropdown-content {
+    border-radius: 6px;
+    min-width: 50px;
+    padding: 4px;
+    .exit-account {
+      padding: 3px;
+      font-size: 7px;
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+  .sidebar-options {
+    height: 54px;
+    width: 100%;
+    margin-top: 20px;
+    .members,
+    .settings {
+      i {
+        font-size: 6px;
+      }
+      border-radius: 9px;
+      padding: 8px;
+      span {
+        margin-left: 5%;
+        font-size: 7px;
+      }
+    }
+  }
+  .sidebar-messages {
+    margin-top: 10px;
+    min-height: 65%;
+  }
+  .placeholder {
+    padding: 0 8px;
+    span {
+      margin-left: 2%;
+      font-size: 7px;
+    }
+    i {
+      font-size: 6px;
+    }
+  }
+  .drop-list-icon {
+    i {
+      font-size: 4px;
+      margin-top: 12px;
+      left: 11px;
+    }
+  }
+  .drop-list {
+    padding: 8px;
+    border-radius: 8px;
+    .drop-list_block {
+      span {
+        margin-left: 5%;
+        font-size: 7px;
+      }
+      img {
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+      }
+      .plus-block {
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        i {
+          font-size: 6px;
+        }
+      }
+    }
+  }
 }
 
 // @media screen and (max-width: 640px) {

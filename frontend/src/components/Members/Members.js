@@ -129,7 +129,7 @@ const Members = ({ fetchMessages, setLoadConversation }) => {
 
   return (
     <>
-      <div className="members-container">
+      <div className="members-container app-scroll">
         <div className="members-block">
           <h2 className="members-h2">Друзья</h2>
           <div className="members-search">

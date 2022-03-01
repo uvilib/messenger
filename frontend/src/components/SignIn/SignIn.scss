@@ -525,3 +525,9 @@ iframe {
   right: -80px;
   bottom: -80px;
 }
+
+@media (max-width: 375px) {
+  .background {
+    display: none;
+  }
+}

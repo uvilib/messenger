@@ -165,3 +165,30 @@
   cursor: pointer;
   margin: 0 auto;
 }
+
+@media (max-width: 375px) {
+  .next-step-background {
+    display: none;
+  }
+  .reg-link {
+    display: none;
+  }
+  .block-flex-between {
+    margin: 0 0 20px 0;
+  }
+  .add-img {
+    padding-top: 25px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .login100-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .login100-form-title {
+    padding-bottom: 30px;
+  }
+  .back-arrow {
+    margin-bottom: 20px;
+  }
+}
